@@ -1,0 +1,19 @@
+﻿<Window x:Class="lab_1.EntrysWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="XML DataGrid" Height="350" Width="802">
+    <Grid>
+        <DataGrid x:Name="dataGrid" AutoGenerateColumns="False" Margin="10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Doctor Name" Binding="{Binding DoctorName}" Width="150" />
+                <DataGridTextColumn Header="Patient Name" Binding="{Binding PatientName}" Width="150" />
+                <DataGridTextColumn Header="Birthday" Binding="{Binding Birthday}" Width="100" />
+                <DataGridTextColumn Header="Height" Binding="{Binding Height}" Width="50" />
+                <DataGridTextColumn Header="Weight" Binding="{Binding Weight}" Width="50" />
+                <DataGridTextColumn Header="Pressure" Binding="{Binding Pressure}" Width="60" />
+                <DataGridTextColumn Header="Diagnosis" Binding="{Binding Diagnosis}" Width="80" />
+                <DataGridTextColumn Header="Inspection Date" Binding="{Binding InspectionDate}" Width="120" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
